@@ -155,6 +155,7 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 */
 
+
 const jonas = [
   "Jonas",
   "Schmedtmann",
@@ -166,12 +167,24 @@ const jonas = [
 //   console.log(jonas[i], typeof jonas[i]);
 // }
 
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== "object" && typeof jonas[i] !== "string") continue;
-  console.log(jonas[i], typeof jonas[i]);
-}
+// for (let i = 0; i < jonas.length; i++) {
+  // if (typeof jonas[i] !== "string") continue;   
+//   console.log(jonas[i], typeof jonas[i]);
+// }
 
 // for (let i = 0; i < jonas.length; i++) {
-// 	if (typeof jonas[i] == "object") break;
+// 	if (typeof jonas[i] === "object") break;
 // 	console.log(jonas[i])
 // }
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+// 	console.log(jonas[i]);
+// }
+
+for (let exc = 1; exc < 4; exc++) {
+	console.log(`-- exc nmb${exc}`);
+
+	for (let rep = 1; rep < 5; rep++) {
+		console.log(`-------- rep nmb${rep}`);
+	}
+}
