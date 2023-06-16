@@ -222,3 +222,22 @@ console.log(calcAverage(arrNumbers))
 
 */
 
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
+
+const calcTempAmplitude = function (temps) {
+	let maxTemp = temps[0];
+	let minTemp = [0];
+	for (let i = 0; i < temps.length; i++) {
+		let currentTemp = temps[i]
+		if (currentTemp > maxTemp) maxTemp = currentTemp;
+		if (currentTemp < minTemp) minTemp = currentTemp;
+		if (typeof currentTemp != "number") continue;
+	}
+	const tempAmpl = maxTemp - minTemp;
+	console.log(maxTemp);
+	console.log(minTemp);	
+	return tempAmpl;
+}
+
+console.log(calcTempAmplitude(temperatures))
+
